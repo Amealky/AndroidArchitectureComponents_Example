@@ -1,27 +1,17 @@
-package io.bm.aac_example.ui
+package io.bm.AndroidArchitectureComponents_Example.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import awaitObjectResult
-import com.github.kittinunf.fuel.Fuel
 import dagger.android.AndroidInjection
-import io.bm.aac_example.R
-import io.bm.aac_example.api.CoinResultDeserializer
-import io.bm.aac_example.api.CoinRouting
-import io.bm.aac_example.model.Coin
-import io.bm.aac_example.utils.Resource
-import io.bm.aac_example.utils.Status
-import io.bm.aac_example.vm.CoinViewModel
+import io.bm.AndroidArchitectureComponents_Example.R
+import io.bm.AndroidArchitectureComponents_Example.model.Coin
+import io.bm.AndroidArchitectureComponents_Example.utils.Resource
+import io.bm.AndroidArchitectureComponents_Example.utils.Status
+import io.bm.AndroidArchitectureComponents_Example.vm.CoinViewModel
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.CoroutineStart
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.channels.consumeEach
-import kotlinx.coroutines.channels.produce
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -36,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private val updateCoins = Observer<Resource<Array<Coin>>> { it ->
         when (it.status) {
             Status.SUCCESS -> {
-                //refreshCoinsList(it.data ?: emptyArray())
+                updateCoins(it.data ?: emptyArray())
                 this@MainActivity.swipe_refresh.isRefreshing = false
             }
             Status.ERROR -> {

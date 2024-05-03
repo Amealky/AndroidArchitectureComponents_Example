@@ -1,4 +1,4 @@
-package io.bm.aac_example.api
+package io.bm.AndroidArchitectureComponents_Example.api
 
 import com.github.kittinunf.fuel.core.ResponseDeserializable
 import com.google.gson.Gson

@@ -1,4 +1,4 @@
-package io.bm.aac_example
+package io.bm.AndroidArchitectureComponents_Example
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,10 +1,10 @@
-package io.bm.aac_example.di
+package io.bm.AndroidArchitectureComponents_Example.di
 
 import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
-import io.bm.aac_example.AACExampleApp
+import io.bm.AndroidArchitectureComponents_Example.AACExampleApp
 import javax.inject.Singleton
 
 

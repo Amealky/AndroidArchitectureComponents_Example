@@ -1,16 +1,8 @@
-package io.bm.aac_example.di
+package io.bm.AndroidArchitectureComponents_Example.di
 
-import com.google.gson.Gson
-import com.google.gson.GsonBuilder
 import dagger.Module
-import dagger.Provides
 import dagger.android.ContributesAndroidInjector
-import io.bm.aac_example.api.CoinResultDeserializer
-import io.bm.aac_example.api.CoinTypeAdapter
-import io.bm.aac_example.model.Coin
-import io.bm.aac_example.ui.MainActivity
-import java.lang.reflect.Modifier
-import javax.inject.Singleton
+import io.bm.AndroidArchitectureComponents_Example.ui.MainActivity
 
 @Module
 abstract class MainActivityModule {

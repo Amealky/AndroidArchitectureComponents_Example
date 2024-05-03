@@ -1,4 +1,4 @@
-package io.bm.aac_example
+package io.bm.AndroidArchitectureComponents_Example
 
 import org.junit.Test
 

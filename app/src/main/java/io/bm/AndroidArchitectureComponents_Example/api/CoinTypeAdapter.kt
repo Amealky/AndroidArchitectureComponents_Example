@@ -1,10 +1,10 @@
-package io.bm.aac_example.api
+package io.bm.AndroidArchitectureComponents_Example.api
 
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
-import io.bm.aac_example.model.Coin
+import io.bm.AndroidArchitectureComponents_Example.model.Coin
 import java.lang.reflect.Type
 
 class CoinTypeAdapter : JsonDeserializer<Coin> {
@@ -12,8 +12,8 @@ class CoinTypeAdapter : JsonDeserializer<Coin> {
         val ID = "id"
         val NAME = "name"
         val SYMBOL = "symbol"
-        val RANK = "rank"
-        val QUOTES = "quotes"
+        val RANK = "cmc_rank"
+        val QUOTES = "quote"
         val USD = "USD"
         val PRICE = "price"
     }

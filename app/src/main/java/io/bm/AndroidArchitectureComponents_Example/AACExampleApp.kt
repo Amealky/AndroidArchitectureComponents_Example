@@ -1,4 +1,4 @@
-package io.bm.aac_example
+package io.bm.AndroidArchitectureComponents_Example
 
 import android.app.Activity
 import android.app.Application
@@ -7,9 +7,7 @@ import com.facebook.stetho.Stetho
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
-import io.bm.aac_example.api.CoinResultDeserializer
-import io.bm.aac_example.di.DaggerAppComponent
-import io.bm.aac_example.model.Coin
+import io.bm.AndroidArchitectureComponents_Example.di.DaggerAppComponent
 import timber.log.Timber
 import javax.inject.Inject
 

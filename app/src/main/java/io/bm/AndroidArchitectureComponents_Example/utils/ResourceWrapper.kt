@@ -1,4 +1,4 @@
-package io.bm.aac_example.utils
+package io.bm.AndroidArchitectureComponents_Example.utils
 
 /*L'intérêt de cette encapsulation est double :
 

@@ -1,4 +1,4 @@
-package io.bm.aac_example.model
+package io.bm.AndroidArchitectureComponents_Example.model
 
 data class Coin (
     val id: Long,

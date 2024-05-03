@@ -22,8 +22,8 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField 'String', "API_BASE_URL", '"https://api.coinmarketcap.com/v2/"'
-            buildConfigField 'String', "API_COINS_URL", '"ticker/?structure=array"'
+            buildConfigField 'String', "API_BASE_URL", '"https://sandbox-api.coinmarketcap.com/v1/"'
+            buildConfigField 'String', "API_KEY", '"YOUR-KEY'
         }
         release {
             minifyEnabled false

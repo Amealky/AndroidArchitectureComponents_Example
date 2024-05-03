@@ -1,8 +1,8 @@
-package io.bm.aac_example.api
+package io.bm.AndroidArchitectureComponents_Example.api
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-import io.bm.aac_example.model.Coin
+import io.bm.AndroidArchitectureComponents_Example.model.Coin
 import java.util.*
 
 data class CoinResult (

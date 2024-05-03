@@ -1,8 +1,8 @@
-package io.bm.aac_example.api
+package io.bm.AndroidArchitectureComponents_Example.api
 
 import com.github.kittinunf.fuel.core.Method
 import com.github.kittinunf.fuel.util.FuelRouting
-import io.bm.aac_example.BuildConfig
+import io.bm.AndroidArchitectureComponents_Example.BuildConfig
 
 
 sealed class CoinRouting : FuelRouting {
@@ -23,7 +23,7 @@ sealed class CoinRouting : FuelRouting {
     override val path: String
         get() {
             return when(this) {
-                is GetCoins -> "ticker/"
+                is GetCoins -> "cryptocurrency/listings/latest?CMC_PRO_API_KEY=" + BuildConfig.API_KEY
             }
         }
 

@@ -1,4 +1,4 @@
-package io.bm.aac_example.ui
+package io.bm.AndroidArchitectureComponents_Example.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import io.bm.aac_example.R
-import io.bm.aac_example.model.Coin
+import io.bm.AndroidArchitectureComponents_Example.R
+import io.bm.AndroidArchitectureComponents_Example.model.Coin
 import kotlinx.android.synthetic.main.item_coin.view.*
 
 class CoinAdapter(private val coins: List<Coin>, private val context: Context)
@@ -27,6 +27,7 @@ class CoinAdapter(private val coins: List<Coin>, private val context: Context)
         val coinCode = coin.code
         val coinRank = coin.rank
         val coinPrice = coin.price
+
 
         holder.coinHeader.text = context.getString(
             R.string.coin_header,
