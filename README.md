@@ -5,7 +5,7 @@ This project is a working example of [Android Architecture Components](https://p
 It also implement the [CoinMarketCap API](https://pro.coinmarketcap.com/api/v1#section/Quick-Start-Guide) 
 
 
-Made with [Android Studio 4.1](https://developer.android.com/studio/archive?hl=en)
+Made with [Android Studio 4.1](https://developer.android.com/studio/archive?hl=en).
 
 ## Stuff to know for running the app ⚙️
 
